@@ -11,8 +11,20 @@
   src: url(dir/resources/fonts/fyodor.ttf);
 }
 
+@font-face {
+  font-family: bit;
+  src: url(dir/resources/fonts/bit.TTF);
+}
+
+div.p {
+  line-height: 0.1;
+}
+
 body {
-    background-color: black;
+  text-align: center;
+  background-color: black;
+  border: 15px solid red;
+  height: 180px;
   }
   
   h1 {
@@ -27,13 +39,29 @@ body {
     color: red;
     font-size: 50px;
     text-align: center;
-    font-family: goodtimes;
     text-decoration: none;
+    text-decoration: none
   }
   
   h3 {
       color: darkred;
       font-size: 20px;
       text-align: center;
-      font-family: fyodor;
+      font-family: bit;
+  }
+
+  hr.rojo {
+    border: 8px solid red;
+  }
+
+  a {
+    color: red;
+    font-family: bit;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none
+  }
+
+  audio {
+    align-content: center;
   }
