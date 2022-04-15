@@ -16,14 +16,44 @@
   src: url(dir/resources/fonts/bit.TTF);
 }
 
-div.p {
-  line-height: 0.1;
+@font-face {
+  font-family: readable;
+  src: url(dir/resources/fonts/readable.ttf);
+}
+
+.centerdiv{
+  margin: auto;
+  width: 50%;
+
+}
+.redcontainerdiv{
+  border: 15px solid red;
+  padding-top: 10px;
+}
+.tmenu{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.selector {
+  border-color: aliceblue 1px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: left;
+}
+
+.separator{
+  border-color: aliceblue 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: darkred;
+  font-size: xx-large;
 }
 
 body {
   text-align: center;
   background-color: black;
-  border: 15px solid red;
   height: 180px;
   }
   
@@ -50,8 +80,16 @@ body {
       font-family: bit;
   }
 
+  h4{
+    color: blue;
+      font-size: 25px;
+      text-align: center;
+      font-family: readable;
+  }
+
   hr.rojo {
     border: 8px solid red;
+    width: 90%;
   }
 
   a {
@@ -64,4 +102,10 @@ body {
 
   audio {
     align-content: center;
+  }
+
+  /*ANIMATIONS*/
+  .selector:hover{
+    transition: 0.3s;
+    transform: scale(1.1,1.1);
   }
