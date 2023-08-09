@@ -34,6 +34,12 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  color: #41f016;
+  background-color: #0b2e80;
+}
+a {
+  color: red;
+  text-decoration: none;
 }
 
 hr.black {

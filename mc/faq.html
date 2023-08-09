@@ -10,13 +10,20 @@
 <body>
   <br>
   <a href="index.html"><img src="resources/backarrow.gif" width="100px" height="auto" alt="Volver"></a>
-  <br>
-  <p>No voy a decorar esta pagina mela pela</p>
+  <h1 style="text-align: center; font-size: 80px;">F.A.Q</h1>
+  <p>La pagina se va a quedar así de fea mela pela</p>
 
   <hr class="black" />
   <h1 style="text-decoration: underline;">¿Como Instalar el minecraft y los mods?</h1>
 
   <ol>
+    <li>Primero comprueba si tienes la versión 17 de java instalada abriendo una consola y escribiendo
+      <code>'java -version'</code>
+    </li>
+    Debería aparecerte algo así: <br>
+    <img src="./resources/javaversion.png" alt="java version">
+    <p>Si tienes una versión inferior, tendrás que <a href="https://almacen.julete.xyz/api/public/dl/y8c5Sapu">descargar
+        Java 17</a>, instalarlo y reiniciar</p>
     <li>Descarga Minecraft (Ya sea la versión oficial o <a href="https://skmedix.pl/downloads">SKLauncher</a>) e inicia
       la versión 1.19.3 al menos una
       vez</li>
@@ -28,44 +35,39 @@
     <li>Una vez instalado Minecraft, pulsa Win+R y busca %appdata%/.minecraft
       para abrir la carpeta de minecraft de esta forma:</li>
     <img src="./resources/winr.png" width="400px" height="auto" alt="winr">
-    <br>
+    <br><br>
     <li>Una vez en la carpeta de Minecraft, busca la carpeta "mods" (o creala) e
       introduce los archivos .jar que descargaste con el pack de mods. Debería
       quedar con una ruta así:</li>
     <img src="./resources/modfolder.png" width="500px" height="auto" alt="modfolder">
-    <br>
+    <br><br>
     <li>Ya ta</li>
   </ol>
 
   <hr class="black" />
-  <h1 style="text-decoration: underline;">NO FUNCIONA NO FUNCIONA NO FUNCIONAAAA</h1>
-  <p style="font-size: 14px;">prueba esto hehe</p>
-  <h2>Igual no tienes Java 17</h2>
-  <p>Ve a la consola y ejecuta <code>java -version</code></p>
-  <p>Si no tienes la version 17, descargala <a href="https://almacen.julete.xyz/api/public/dl/y8c5Sapu">aquí</a> y
-    reinicia el PC despues de instalarla</p>
-  <p>Ahora al ejecutar <code>java -version</code> deberías ver algo así:</p>
-  <img src="./resources/javaversion.png" alt="java version">
-
+  <h1 style="text-decoration: underline;">NO FUNCIONA NO FUNCIONA NO FUNCIONA</h1>
+  <p>Hablame al insta o al twitter o a donde quieras yo te arreglo los rollos</p>
   <hr class="black" />
   <h1 style="text-decoration: underline;">¿Como inicio sesión?</h1>
   <p>La primera vez que entres al servidor tendrás que crear una contraseña
-    usando<code>/register [constraseña] [constraseña]</code></p>
-  <p>Despues de esto tendrás que escribir en el chat el codigo que aparece para confirmar que no eres un bot (o un
-    canarión)</p>
+    usando<code>/register [constraseña]</code></p>
   <p>Las proximas veces que entres al servidor tendrás que escribir en el chat<code>/login [constraseña]</code></p>
   <p>Se que esto es una pajada pero es importante para que nadie pueda entrar con tu cuenta</p>
 
   <hr class="black" />
   <h1 style="text-decoration: underline;">¿Como me teletransporto?</h1>
   <p>Usando el sistema de las waystones.</p>
+  <p>Ves a una waystones, te la mamas y la pones en tu casa</p>
+  <p>Luego le dices a un colegas que vaya a tu casa y clique la waystone pa guardarla</p>
+  <p>O le das a <code>global</code> pa que un random vaya a tu casa y se la coma</p>
 
   <hr class="black" />
   <h1 style="text-decoration: underline;">¿Como protejo mi territorio?</h1>
+  <p style="font-size: 13px;">(Esto lo hizo en gran parte el ChatGPT, no estaba yo por la labor)</p>
   <p>
     Factions es un plugin muy popular para servidores de Minecraft que permite
     a los jugadores crear y unirse a facciones para formar alianzas y luchar
-    contra otras facciones. A continuación, aprenderemos las funcionalidades
+    contra otras facciones (O vivir en paz y harmonía carajo). A continuación, aprenderemos las funcionalidades
     básicas y algunos comandos esenciales del plugin de Factions.
   </p>
 
@@ -74,10 +76,10 @@
   <ul>
     <li><strong>Facción:</strong> Un grupo de uno o más jugadores que se unen para formar una alianza en el servidor.
     </li>
-    <li><strong>Territorio (Claim):</strong> La región del mapa que una facción reclama como suya. Otros jugadores no
-      pueden construir o romper bloques en este territorio siempre que</li>
-    <li><strong>Power:</strong> Puntuación [-10 - 12] que se consigue manteniendose sin morir. Al morir pierdes 4 de
-      power</li>
+    <li><strong>Territorio (Claim):</strong> Chunk (16x16) que una facción reclama como suya. Otros jugadores no
+      pueden construir, romper bloques o abrir cofres en este territorio a no ser que pertenezcan a la facción</li>
+    <li><strong>Power:</strong> Puntuación [-10 a 12] que se consigue manteniendose sin morir.</li>
+    <li>Consigues 0.2 de power por minuto y pierdes 4 al morir. Por cada punto de power se puede claimear un chunk</li>
     <li><strong>Sí tienes más territorio claimeado que power total en tu facción. Otra facción podrá claimear parte de
         tu territorio</strong></li>
   </ul>
@@ -90,12 +92,18 @@
   <ul>
     <li><code>/f create [nombre facción]</code>: Crea una nueva facción con el nombre especificado.</li>
     <li><code>/f disband</code>: Elimina la facción actual.</li>
+    <li><code>/f invite [nombre jugador]</code>: Invita a un jugador a unirse a tu facción.</li>
+    <li><code>/f promote [jugador]</code>: Sube el rango de un miembro (Para que pueda construir en el territorio
+      claimeado)</li>
+    <li><code>/f kick [nombre jugador]</code>: Expulsa a un jugador de tu facción.</li>
+    <li><code>/f pow [nombre jugador]</code>: Muestra el power de un jugador.</li>
     <li><code>/f list</code>: Muestra una lista de todas las facciones del servidor.</li>
     <li><code>/f show [nombre facción]</code>: Muestra información sobre la facción especificada.</li>
     <li><code>/f desc [descripción]</code>: Establece la descripción de la facción actual.</li>
     <li><code>/f join [nombre facción]</code>: Únete a una facción existente con el nombre especificado.</li>
     <li><code>/f leave</code>: Abandona la facción actual.</li>
     <li><code>/f claim</code>: Reclama el territorio (chunk) en el que te encuentras para tu facción.</li>
+    <li><code>/f unclaim</code>: Elimina el territorio (chunk) en el que te encuentras de tu facción.</li>
     <li><code>/f map</code>: Muestra el mapa del servidor con los territorios de cada facción.</li>
     <li><code>/f sethome</code>: Establece el teleport de tu facción en la posición actual.</li>
     <li><code>/f home</code>: Teletransporta al jugador a la base principal de su facción.</li>
@@ -103,8 +111,21 @@
     <li><code>/f kick [jugador]</code>: Expulsa a un jugador de tu facción.</li>
     <li><code>/f ally [nombre facción]</code>: Envía una solicitud de alianza a otra facción.</li>
     <li><code>/f enemy [nombre facción]</code>: Declara guerra a otra facción.</li>
-    <li><code>/f promote [jugador]</code>: Promueve a un jugador a líder de tu facción.</li>
   </ul>
+
+  <hr class="black" />
+  <h1 style="text-decoration: underline;">Aspectos tecnicos, bugs, boberías y rutinas del servidor</h1>
+  <ul>
+    <li>Si ves que el server está cerrado probablemente se esté reiniciando, vuelve a intentarlo en 3 minutos</li>
+    <li>A las 7:00 AM se cierra el servidor, se hace una copia de segurida y se apaga el sistema</li>
+    <li>A las 10:00 AM se manda un paquete de encendido a la maquina y el servidor se ejecuta automaticamente</li>
+    <li>Son 3 horas sin servidor, </li>
+    <br>
+    <li>No construyas en el bioma <code>minecraft:deep_frozen_ocean</code>, desaparecerá todo.</li>
+    <li>Si pulsas F3+G puedes visualizar los chunks y es bastante util a la hora de claimear.</li>
+    </li>
+  </ul>
+
   <hr class="black" />
   <h1 style="text-align: center;">Cualquier cosa al DM <a href="https://www.instagram.com/julio_fm8/">@julio_fm8</a> o
     al bizum</h1>
